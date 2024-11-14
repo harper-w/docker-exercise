@@ -4,7 +4,7 @@ pipline{
         stage("Run Script"){
             steps {
                 dir("Task2"){
-                sh "Task2/deploy.sh"
+                sh "./deploy.sh"
                 }
             }
         }
