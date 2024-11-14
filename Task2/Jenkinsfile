@@ -1,9 +1,9 @@
-pipline{
+pipline {
     agent any 
-    stage {
-        stage("Run Script"){
+    stages {
+        stage("Run Script") {
             steps {
-                dir("Task2"){
+                dir("Task2") {
                 sh "sh deploy.sh"
                 }
             }
